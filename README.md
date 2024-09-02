@@ -37,22 +37,22 @@ API 응답을 처리하여 사용자에게 의미 있는 정보를 제공하는 
 - **라이브러리 설치**
 - 2.react-router-dom을 설치합니다.  
   - `npm install react-router-dom`  
-    (리엑트는 싱글페이로, 한개의 페이지로 이루어져 있기 때문에 여러 페이지를 만들려면 스크립트 처리가 필요하다)
+    (리엑트는 싱글페이로, 한개의 페이지로 이루어져 있기 때문에 여러 페이지를 만들려면 스크립트 처리가 필요)
 - 3.axios를 설치합니다.
   - `npm install axios`
 - 4.react-icons을 설치합니다. 
   - `npm install react-icons`
 - 5.react-player를 설치합니다.        
   - `npm install react-player`  
-    (영상 관련 작업을 편리하게 할 수 있도록 도와준다)
+    (영상 관련 작업을 편리하게 할 수 있도록 도와줌)
 - 6.sass를 설치합니다.                
   - `npm install sass`
 - 7.react-helmet-async를 설치합니다.  
   - `npm install react-helmet-async`  
-    (페이지마다 메타 데이터를 웹 표준을 준수하거나 검색에 노출이 잘 될 수 있도록 처리해 준다)
+    (페이지마다 메타 데이터를 웹 표준을 준수하거나 검색에 노출이 잘 될 수 있도록 처리)
 - 8.swiper를 설치합니다.              
   - `npm install swiper`  
-    (이미지 슬라이드 관련 작업을 도와준다)
+    (이미지 슬라이드 관련 작업을 도와줌)
 
 ## 기타
 - 참고 사이트 : https://webstoryboy.co.kr/1964

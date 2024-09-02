@@ -1,0 +1,18 @@
+
+// UTF-8은 "Unicode Transformation Format - 8-bit"의 약자로, 
+// 다양한 문자와 문자열을 컴퓨터에서 표현하기 위한 문자 인코딩 방식 중 하나입니다. 
+// Unicode는 전 세계의 모든 문자를 고유한 코드 포인트로 나타내는 국제 표준입니다. 
+// 이를 컴퓨터에서 저장하고 전송하기 위해서는 효율적인 방식이 필요한데, 그 역할을 하는 것이 UTF-8입니다.
+@charset "UTF-8";
+
+// SCSS 파일 이름 앞에 _(언더바 = 언더스코어)를 붙이는 것은 Sass의 관례 중 하나다.
+// 하이픈이 바로 include 되었다는 개념.
+// 이 언더스코어는 해당 파일이 "부분 파일"임을 나타낸다.
+// 부분 파일은 SCSS 파일에 포함될 수 있도록 설계된 파일로, 직접적으로 CSS로 컴파일되지는 않는다.
+
+// setting
+@import "setting/fonts";    // 폰트 파일과 관련된 CSS를 설정합니다.
+@import "setting/vars";     // 변수와 관련된 CSS를 설정합니다.
+@import "setting/reset";    // 브라우저 스타일 초기화나 리셋 관련 CSS를 설정합니다.
+@import "setting/mixin";    // 믹스인과 관련된 CSS를 설정합니다.
+@import "setting/common";   // 공통적인 CSS 스타일을 설정합니다.

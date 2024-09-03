@@ -32,44 +32,44 @@ API 응답을 처리하여 사용자에게 의미 있는 정보를 제공하는 
 
 ## 프로젝트 세팅 단계
 ### 1.프로젝트 설치
-- **설명1**: react를 설치합니다.  
+- **설명 1**: react를 설치합니다.  
 - **명령어**:
   ```bash
   npx create-react-app 프로젝트명
 ### 2.라이브러리 설치
-- **설명1**: react-router-dom을 설치합니다.  
+- **설명 1**: react-router-dom을 설치합니다.  
 - **명령어**:
   ```bash
   npm install react-router-dom  
-    (리엑트는 싱글페이지로 즉, 한개 페이지로 이루어져 있기 때문에  
-     여러 페이지를 만들려면 스크립트 처리가 필요함)
-- **설명2**: axios를 설치합니다.
+- **참고**: 리엑트는 싱글페이지로 즉, 한개 페이지로 이루어져 있기 때문에  
+            여러 페이지를 만들려면 스크립트 처리가 필요함
+- **설명 2**: axios를 설치합니다.
 - **명령어**:
   ```bash
   npm install axios`
-- **설명3**: react-icons을 설치합니다. 
+- **설명 3**: react-icons을 설치합니다. 
 - **명령어**:
   ```bash
   npm install react-icons`
-- **설명4**: react-player를 설치합니다.        
+- **설명 4**: react-player를 설치합니다.        
 - **명령어**:
   ```bash
-  npm install react-player`  
-    (영상 관련 작업을 편리하게 할 수 있도록 도와줌)
-- **설명5**: sass를 설치합니다.                
+  npm install react-player  
+- **참고**: 영상 관련 작업을 편리하게 할 수 있도록 도와줌
+- **설명 5**: sass를 설치합니다.                
 - **명령어**:
   ```bash
   npm install sass`
-- **설명6**:react-helmet-async를 설치합니다.  
+- **설명 6**:react-helmet-async를 설치합니다.  
 - **명령어**:
   ```bash
-  npm install react-helmet-async`  
-    (페이지마다 메타 데이터를 웹 표준을 준수하거나 검색에 노출이 잘 될 수 있도록 처리)
-- **설명7**:swiper를 설치합니다.              
+  npm install react-helmet-async
+- **참고**: 페이지마다 메타 데이터를 웹 표준을 준수하거나 검색에 노출이 잘 될 수 있도록 처리
+- **설명 7**:swiper를 설치합니다.              
 - **명령어**:
   ```bash
-  npm install swiper`  
-    (이미지 슬라이드 관련 작업을 도와줌)
+  npm install swiper
+- **참고**: 이미지 슬라이드 관련 작업을 도와줌
 
 ## 기타
 - 참고 사이트 : https://webstoryboy.co.kr/1964

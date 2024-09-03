@@ -11,3 +11,4 @@ root.render(
     <App />             {/* 여기는  App.js의 내용을 불러오는 부분이다. */}
   </React.StrictMode>
 );
+ 

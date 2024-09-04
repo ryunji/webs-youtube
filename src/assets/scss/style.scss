@@ -10,9 +10,12 @@
 // 이 언더스코어는 해당 파일이 "부분 파일"임을 나타낸다.
 // 부분 파일은 SCSS 파일에 포함될 수 있도록 설계된 파일로, 직접적으로 CSS로 컴파일되지는 않는다.
 
-// setting
+// 1.setting
 @import "setting/fonts";    // 폰트 파일과 관련된 CSS를 설정합니다.
 @import "setting/vars";     // 변수와 관련된 CSS를 설정합니다.
 @import "setting/reset";    // 브라우저 스타일 초기화나 리셋 관련 CSS를 설정합니다.
 @import "setting/mixin";    // 믹스인과 관련된 CSS를 설정합니다.
 @import "setting/common";   // 공통적인 CSS 스타일을 설정합니다.
+
+// 2.section
+@import "section/layout";

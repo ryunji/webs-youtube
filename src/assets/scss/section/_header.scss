@@ -1,0 +1,81 @@
+.header__logo{
+
+    border-bottom : 1px solid var(--black200);
+    a{
+        display   : flex;
+        padding   : 10px;
+        margin    : 10px;
+
+        em{
+
+            width            : 40px;
+            height           : 40px;
+            display          : block;
+            background-color : var(--red);
+            margin-right     : 10px;
+            
+            //애니메이션 이름, 애니메이션 지속시간, 애니메이션 지연 시간 : 에니메이션이 시작되기 1초 동안 기다리기. 애니메이션의 타이밍 함수 : 천천히 시작했다가 중간에 빨라지고, 다시 천천히 끝. 무한반복
+            animation        : ani 20s 20s ease-in-out infinite ;
+        }
+
+        span{
+
+            font-size      : 18px;
+            line-height    : 1;            //여백 안생기게 처리?
+            font-weight    : 900;
+        // text-transform : uppercase;
+        }
+    }
+}
+
+.header__menu{
+
+    padding : 10px 0;
+    .menu{
+            li{
+
+                margin-bottom: 5px;
+                a{
+                    font-size     : 1rem;   //반응형 고려.
+                    display       : block;
+                    padding       : 0.9rem 2rem 0.9rem 50px;
+                    margin        : 0 0.625rem;
+                    border-radius : 40px;
+
+                    background-color : #111;
+                }
+            }
+    }
+
+    .keyword{
+
+    }
+
+}
+
+.header_sns{
+
+}
+
+
+@keyframes ani{
+
+    //시작
+    0%{
+        transform: rotate(0) scale(1);
+        border-radius: 0;
+    }
+
+    //중간
+    50%{
+        transform: rotate(720deg) scale(0.5);
+        border-radius: 20px;
+    }
+
+    //끝
+    100%{
+        transform: rotate(0) scale(1);
+        border-radius: 0;
+    }
+
+}

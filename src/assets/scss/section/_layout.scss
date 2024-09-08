@@ -4,6 +4,7 @@
     top: 0;
     width: 260px;
     height:100%;
+    overflow-y: auto;                   //스크롤 생기도록 처리.
     z-index: 10000;
     background-color: #000;
 }

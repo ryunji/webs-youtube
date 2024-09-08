@@ -75,7 +75,7 @@ const Header = () => {
         </ul>
 
         <ul className='keyword'>
-          <li>
+          <li className='active'>
               <a href='/search/webstoryboy'>webstoryboy</a>
           </li>
           <li>

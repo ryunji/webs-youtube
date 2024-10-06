@@ -1,22 +1,21 @@
-import React from 'react'
+import React, {Suspense, lazy} from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Main from './components/section/Main';
 
-import Home from './pages/Home'                     //Home 컴포넌트를 불러오기 위해서 './pages/Home' 경로로부터 가져와서 연동
-import Today from './pages/Today'
-import Developer from './pages/Developer'
-import Webd from './pages/Webd'
-import Website from './pages/Website'
-import Gsap from './pages/Gsap'
-import Port from './pages/Port'
-import Youtube from './pages/Youtube'
-import Channel from './pages/Channel'
-import Video from './pages/Video'
-import Search from './pages/Search'
-import Not from './pages/Not'
-import Header from './components/section/Header'
-import Main from './components/section/Main'
-import Footer from './components/section/Footer'
+// import Home from './pages/Home'                     : Home 컴포넌트를 불러오기 위해서 './pages/Home' 경로로부터 가져와서 연동
 
+const Home = lazy(() => import('./pages/Home'));
+const Today = lazy(() => import('./pages/Today'));
+const Developer = lazy(() => import('./pages/Developer'));
+const Webd = lazy(() => import('./pages/Webd'));
+const Website = lazy(() => import('./pages/Website'));
+const Gsap = lazy(() => import('./pages/Gsap'));
+const Port = lazy(() => import('./pages/Port'));
+const Youtube = lazy(() => import('./pages/Youtube'));
+const Channel = lazy(() => import('./pages/Channel'));
+const Video = lazy(() => import('./pages/Video'));
+const Search = lazy(() => import('./pages/Search'));
+const Not = lazy(() => import('./pages/Not'));
 
 // App은 익명함수의 형태로 결과값 반환.
 const App = () =>{
@@ -26,8 +25,7 @@ const App = () =>{
         // BrowserRouter는 react-router-dom의 컴포넌트로 가상의 주소 쓰겠다는 의미
         // 가상의 주소를 만들어주는 이유는 싱글페이지 구현을 위함 */}
         <BrowserRouter>
-            <Header/>
-            <Main>
+            <Suspense fallback={<Main/>}>
                 {/* Routes → 주소의 집합체라는 의미를 담고 있다. */}
                 <Routes>
                     <Route path='/'                     element={<Home/>}/>             {/* 0. 해당 부분에 내용물들을 보여주는 것을 컴포넌트라고 한다. */}
@@ -43,8 +41,7 @@ const App = () =>{
                     <Route path='/search/:searchID'     element={<Search/>}/>           {/* 4. url에 그냥 search만 쓰면 Not.jsx 페이지를 가져옴. search 페이지를 제대로 호출하기 위해서는 뒤에 키워드(문자열)를 작성해야 한다. ex) /search/개발 */}
                     <Route path='/*'                    element={<Not/>}/>              {/* 5. 여기에는 명시적으로 연동되어 있지 않지만 없는 페이지를 호출하면 Not.jsx 페이지를 호출 함. */}
                 </Routes>
-            </Main>
-            <Footer/>
+            </Suspense>
         </BrowserRouter>
     )
 }

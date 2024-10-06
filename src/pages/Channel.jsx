@@ -15,7 +15,7 @@ import Main from '../components/section/Main'
 const Channel = () => {
   return (
     // <div>Channel</div>
-    <Main>
+    <Main title="The Collecotors 유튜브" description="The Collecotors 유튜브에 오신것을 환영합니다.">
       Channel
     </Main>
   )
